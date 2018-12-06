@@ -17,26 +17,7 @@ AUTHOR:	Lucas Kitzmueller - lucas.kitzmueller@idinsight.org
 				
 ********************************************************************************/
 
-
-
-	*-------------------------------------*
-	* I. Initiate .do file & load dataset *
-	*-------------------------------------*
-
-	version 14.2
-	set more off
-	clear
-
-	cd "/Users/lucaskitzmueller/Dropbox (IDinsight)/Stata Challenge/"
-		* To run .do file, change directory here
-
-	local import 2_surveyor_list 
-	use "`import'", clear
-	
-	local date =c(current_date) // set a date when running .do file
-	local export "3_example team assignment_`date'"
-
-	set seed 6327632 // set seed for ranomization 
+* Adding this comment
 
 	
 	
